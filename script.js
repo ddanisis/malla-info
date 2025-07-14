@@ -26,24 +26,24 @@ const ramos = [
   // 2do año - 2do semestre
   { id: "eco1", nombre: "Fund. Economía", semestre: "semestre2a2", desbloquea: ["evalProy"] },
   { id: "ingles2", nombre: "Inglés 2", semestre: "semestre2a2", desbloquea: ["ingles3"] },
-  { id: "paradigmas", nombre: "Paradigmas de Prog.", semestre: "semestre2a2", desbloquea: ["fundIngSoft", "disenoBD"] },
+  { id: "paradigmas", nombre: "Paradigmas de Prog.", semestre: "semestre2a2", desbloquea: ["fundIngSoft", "disenoBaseDatos"] },
   { id: "algoritmos", nombre: "Análisis de Algoritmos", semestre: "semestre2a2", desbloquea: ["so"] },
   { id: "sistemas", nombre: "Ing. de Sistemas", semestre: "semestre2a2", desbloquea: ["info"] },
   { id: "estructura", nombre: "Estructura Computadores", semestre: "semestre2a2", desbloquea: ["orgComputadores"] },
 
   // 3er año - 1er semestre
   { id: "ingles3", nombre: "Inglés 3", semestre: "semestre3a1", desbloquea: ["ingles4"] },
-  { id: "fundIngSoft", nombre: "Fund. Ing. Software", semestre: "semestre3a1", desbloquea: ["tallerBD", "tecnicasSoft"] },
+  { id: "fundIngSoft", nombre: "Fund. Ing. Software", semestre: "semestre3a1", desbloquea: ["tallerBaseDatos", "tecnicasSoft"] },
   { id: "sociedad", nombre: "Informática y Sociedad", semestre: "semestre3a1", desbloquea: ["seminario"] },
   { id: "info", nombre: "Sistemas de Información", semestre: "semestre3a1", desbloquea: ["seminario"] },
-  { id: "disenoBD", nombre: "Diseño de BD", semestre: "semestre3a1", desbloquea: ["tallerBD"] },
+  { id: "disenoBD", nombre: "Diseño de BaseDatos", semestre: "semestre3a1", desbloquea: ["tallerBD"] },
   { id: "orgComputadores", nombre: "Organización de Computadores", semestre: "semestre3a1", desbloquea: ["so", "redes"] },
   { id: "evalProy", nombre: "Evaluación Proyectos", semestre: "semestre3a1", desbloquea: ["adminProy"] },
 
   // 3er año - 2do semestre
   { id: "ingles4", nombre: "Inglés 4", semestre: "semestre3a2", desbloquea: [] },
   { id: "so", nombre: "Sist. Operativos", semestre: "semestre3a2", desbloquea: ["seminario"] },
-  { id: "tallerBD", nombre: "Taller BD", semestre: "semestre3a2", desbloquea: ["proyecto", "seminario"] },
+  { id: "tallerBD", nombre: "Taller BaseDatos", semestre: "semestre3a2", desbloquea: ["proyecto", "seminario"] },
   { id: "tecnicasSoft", nombre: "Téc. Ing. Software", semestre: "semestre3a2", desbloquea: ["proyecto", "topico1", "topico2", "topico3"] },
   { id: "redes", nombre: "Redes Comp.", semestre: "semestre3a2", desbloquea: ["topico1", "topico2", "topico3"] },
   { id: "adminProy", nombre: "Adm. Proyectos", semestre: "semestre3a2", desbloquea: ["proyecto", "topico3"] },
