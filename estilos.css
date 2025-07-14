@@ -1,8 +1,7 @@
 /* estilos.css */
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff0f5; /* Rosa claro */
+  background-color: #fff0f5; /* fondo rosa claro */
   color: #333;
   padding: 20px;
   margin: 0;
@@ -14,25 +13,54 @@ h1 {
   margin-bottom: 30px;
 }
 
+.contenedor-anios {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.anio {
+  background-color: #fce4ec;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.semestre h3 {
+  color: #880e4f;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.semestre {
+  margin-bottom: 20px;
+}
+
 .malla {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   gap: 15px;
-  justify-content: center;
+  padding-bottom: 10px;
 }
 
 .ramo {
   border: 2px solid #c2185b;
   border-radius: 12px;
   padding: 15px;
-  width: 220px;
+  min-width: 220px;
   min-height: 60px;
   text-align: center;
   font-weight: bold;
-  background-color: #e0e0e0; /* Gris claro */
+  background-color: #e0e0e0; /* gris claro */
   color: #444;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .ramo:hover {
