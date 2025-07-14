@@ -1,10 +1,3 @@
-// script.js
-
-// Este script ya está actualizado con el semestre de cada ramo incluido como propiedad "semestre".
-// Lo puedes pegar directamente. Ya gestiona por semestre y desbloquea automáticamente al aprobar.
-
-const ramos = [/* ... (ya te lo generé con todos los ramos por semestre en respuestas anteriores) ... */];
-
 const estado = {};
 
 function crearRamo(ramo) {
