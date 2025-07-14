@@ -1,19 +1,21 @@
 const ramos = [
+  // 1° Año - 1er Semestre
   { id: "calculo1", nombre: "Cálculo 1", semestre: "semestre1a1" },
   { id: "algebra1", nombre: "Álgebra 1", semestre: "semestre1a1" },
   { id: "fisica1", nombre: "Física 1", semestre: "semestre1a1" },
-  { id: "tallerDesarrollo", nombre: "Taller Desarrollo", semestre: "semestre1a1" },
-  { id: "introIngenieria", nombre: "Intro Ingeniería", semestre: "semestre1a1" },
-  { id: "metodosEstudio", nombre: "Métodos de Estudio", semestre: "semestre1a1" },
+  { id: "taller", nombre: "Taller Desarrollo", semestre: "semestre1a1" },
+  { id: "introIng", nombre: "Intro Ingeniería", semestre: "semestre1a1" },
+  { id: "metodos", nombre: "Métodos Estudio", semestre: "semestre1a1" },
 
+  // 1° Año - 2do Semestre
   { id: "calculo2", nombre: "Cálculo 2", semestre: "semestre1a2" },
   { id: "algebra2", nombre: "Álgebra 2", semestre: "semestre1a2" },
   { id: "fisica2", nombre: "Física 2", semestre: "semestre1a2" },
   { id: "fundComp", nombre: "Fund. Computación", semestre: "semestre1a2" },
-  { id: "quimica", nombre: "Química", semestre: "semestre1a2" },
-  { id: "introInfo", nombre: "Intro Info", semestre: "semestre1a2" }
+  { id: "quimica", nombre: "Química General", semestre: "semestre1a2" },
+  { id: "introInfo", nombre: "Intro Info", semestre: "semestre1a2" },
 
-  // Agrega el resto de los ramos aquí como los de 2°, 3° y 4° año...
+  // Puedes seguir completando el resto igual...
 ];
 
 let estado = {};
