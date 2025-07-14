@@ -40,7 +40,6 @@ h1 {
 }
 
 .ramo {
-  background-color: #f8bbd0;
   padding: 10px;
   margin-bottom: 8px;
   border-radius: 8px;
@@ -49,15 +48,21 @@ h1 {
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
-  color: #444;
-}
-
-.ramo:hover {
-  background-color: #f48fb1;
 }
 
 .ramo.aprobado {
   background-color: #e91e63;
   color: white;
   text-decoration: line-through;
+}
+
+.ramo.desbloqueado {
+  background-color: #f8bbd0;
+  color: #444;
+}
+
+.ramo.bloqueado {
+  background-color: #e0e0e0;
+  color: #888;
+  cursor: default;
 }
