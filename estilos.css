@@ -21,7 +21,7 @@ h1 {
 }
 
 .semestre {
-  min-width: 220px;
+  min-width: 230px;
   background-color: #fce4ec;
   padding: 15px;
   border-radius: 10px;
@@ -57,7 +57,7 @@ h1 {
 }
 
 .ramo.aprobado {
-  background-color: #ab47bc;
+  background-color: #e91e63;
   color: white;
   text-decoration: line-through;
 }
