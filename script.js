@@ -104,3 +104,59 @@ function actualizarVista() {
 cargarEstado();
 ramos.forEach(crearRamo);
 actualizarVista();
+let estado = {};
+
+function cargarEstado() {
+  const data = localStorage.getItem("mallaEstado");
+  estado = data ? JSON.parse(data) : {};
+}
+
+function guardarEstado() {
+  localStorage.setItem("mallaEstado", JSON.stringify(estado));
+}
+
+function toggleRamo(id) {
+  const ramo = ramos.find(r => r.id === id);
+  if (!ramo) return;
+
+  const requisitos = ramos.filter(r => r.desbloquea?.includes(ramo.id));
+  const habilitado = requisitos.length === 0 || requisitos.every(r => estado[r.id]);
+
+  if (!habilitado) return; // No se puede marcar si está bloqueado
+
+  estado[id] = !estado[id];
+  guardarEstado();
+  actualizarVista();
+}
+
+function crearRamo(ramo) {
+  const div = document.createElement("div");
+  div.className = "ramo";
+  div.id = ramo.id;
+  div.textContent = ramo.nombre;
+  div.onclick = () => toggleRamo(ramo.id);
+  document.getElementById(ramo.semestre).appendChild(div);
+}
+
+function actualizarVista() {
+  ramos.forEach(ramo => {
+    const el = document.getElementById(ramo.id);
+    if (!el) return;
+
+    const aprobado = !!estado[ramo.id];
+    el.classList.remove("aprobado", "desbloqueado", "bloqueado");
+
+    if (aprobado) {
+      el.classList.add("aprobado");
+    } else {
+      const requisitos = ramos.filter(r => r.desbloquea?.includes(ramo.id));
+      const habilitado = requisitos.length === 0 || requisitos.every(r => estado[r.id]);
+
+      el.classList.add(habilitado ? "desbloqueado" : "bloqueado");
+    }
+  });
+}
+
+cargarEstado();
+ramos.forEach(crearRamo);
+actualizarVista();
